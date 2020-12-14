@@ -14,11 +14,42 @@ body {
   background-size: cover;
   color: #ffffff;
   height: 100%;
+  width: 1440px;
 }
 
 .menu {
   padding-top: 129px;
   padding-left: 103px;
+}
+
+.menu::before {
+  content: "";
+    background-image: url("../img/Card1.png");
+    background-size: 218px 341px;
+    position: absolute;
+    top: 518px;
+    right: 158px;
+    width: 218px;
+    height: 341px;
+    left: 1101.78px;
+    transform: rotate(40deg);
+    z-index: 1;
+    border-radius: 9px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.menu::after {
+  content: "";
+  background-image: url("../img/Card1.png");
+  background-size: 218px 341px;
+  position: absolute;
+  width: 218px;
+  height: 341px;
+  top: 512px;
+  left: 926.33px;
+  transform: rotate(12deg);
+  border-radius: 9px;
+  box-shadow: -2px 0px 1px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .game-title {
