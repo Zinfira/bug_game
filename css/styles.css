@@ -24,18 +24,18 @@ body {
 
 .menu::before {
   content: "";
-    background-image: url("../img/Card1.png");
-    background-size: 218px 341px;
-    position: absolute;
-    top: 518px;
-    right: 158px;
-    width: 218px;
-    height: 341px;
-    left: 1101.78px;
-    transform: rotate(40deg);
-    z-index: 1;
-    border-radius: 9px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  background-image: url("../img/Card1.png");
+  background-size: 218px 341px;
+  position: absolute;
+  top: 518px;
+  right: 158px;
+  width: 218px;
+  height: 341px;
+  left: 1101.78px;
+  transform: rotate(40deg);
+  z-index: 1;
+  border-radius: 9px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .menu::after {
@@ -83,8 +83,24 @@ p {
   font-weight: 700;
   line-height: 58.59px;
   margin-bottom: 24px;
-  padding-left: 24px;
+  padding-left: 39px;
   outline-style: none;
+  position: relative;
+}
+
+.difficulty__level:hover {
+  cursor: pointer;
+}
+
+.checked::before {
+  content: "";
+  background-color: #D62B2E;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: 17px;
+  transform: rotate(45deg);
 }
 
 .btn-start {
@@ -101,4 +117,14 @@ p {
   outline-style: none;
   border-width: 0;
   margin-bottom: 305px;
+}
+
+.btn-start:hover {
+  cursor: pointer;
+}
+
+.card-table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
