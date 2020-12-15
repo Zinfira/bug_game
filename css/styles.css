@@ -14,7 +14,7 @@ body {
   background-size: cover;
   color: #ffffff;
   height: 100%;
-  width: 1440px;
+  width: 100%;
 }
 
 .menu {
@@ -103,6 +103,7 @@ p {
   transform: rotate(45deg);
 }
 
+
 .btn-start {
   font-size: 32px;
   font-weight: 700;
@@ -123,8 +124,64 @@ p {
   cursor: pointer;
 }
 
-.card-table {
+.card-room {
+  margin: 0 auto;
   width: 100%;
+  perspective: 1000px; 
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+}
+
+.card-table {
+  padding-left: 25px;
+}
+
+.game-cards {
+  align-items: center;
+  width: max-content;
+  max-width: 1440px;
+  height: 1024px;
+}
+
+.card {
+  display: inline-block;
+  background-image: url(../img/Card1.png);
+  background-size: 218px 341px;
+  background: transparent;
+  width: 218px;
+  height: 341px;
+  margin: 0 24px 24px 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 218px;
+  height: 341px;
+  /* width: 100%;
+  height: 100%; */
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  }
+
+.transform {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 218px;
+  height: 341px;
+  /* width: 100%;
+  height: 100%; */
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 218px;
+  height: 341px;
 }
