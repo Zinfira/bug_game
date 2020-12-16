@@ -3,9 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Найди Баг</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Find the Bug</title>
 </head>
 <body>
-  
+  <div class="game-background">
+    <div class="menu" id="menuScreen">
+      <header class="game-title">
+        <h1>Выберите уровень сложности:</h1>
+        <p>Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</p>
+      </header>
+      <main>
+        <section class="difficulty">
+          <button type="button" class="difficulty__level checked" id="easy">Простой</button>
+          <button type="button" class="difficulty__level" id="medium">Средний</button>
+          <button type="button" class="difficulty__level" id="hard">Сложный</button>
+        </section>
+        <button type="button" class="btn-start" id="start">Начать игру</button>
+      </main>
+    </div>
+  </div>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
