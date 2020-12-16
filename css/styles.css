@@ -3,7 +3,6 @@
 body {
   margin: 0;
   padding: 0;
-  /* height: 100vh; */
   box-sizing: border-box;
 }
 
@@ -46,7 +45,7 @@ body {
   width: 218px;
   height: 341px;
   top: 512px;
-  left: 926.33px;
+  left: 927px;
   transform: rotate(12deg);
   border-radius: 9px;
   box-shadow: -2px 0px 1px rgba(0, 0, 0, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -129,7 +128,8 @@ p {
   width: 100%;
   perspective: 1000px; 
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  padding-top: 100px;
 }
 
 .card-table {
@@ -138,6 +138,7 @@ p {
 
 .game-cards {
   align-items: center;
+  justify-content: center;
   width: max-content;
   max-width: 1440px;
   height: 1024px;
@@ -153,16 +154,20 @@ p {
   margin: 0 24px 24px 0;
 }
 
+.hover-cards:hover {
+  transform: rotate(-3deg) translateY(-26px);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  transition: .5s ease-in-out;
+}
+
 .flip-card-inner {
   position: relative;
   width: 218px;
   height: 341px;
-  /* width: 100%;
-  height: 100%; */
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  }
+}
 
 .transform {
   transform: rotateY(180deg);
@@ -172,8 +177,6 @@ p {
   position: absolute;
   width: 218px;
   height: 341px;
-  /* width: 100%;
-  height: 100%; */
   backface-visibility: hidden;
 }
 
