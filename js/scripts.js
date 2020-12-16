@@ -62,8 +62,8 @@ function startGame() {
       flipCardInner.classList.add("flip-card-inner", "hover-cards");
       flipCardFront.classList.add("flip-card-front");
       flipCardBack.classList.add("flip-card-back");
-      imgValue.setAttribute("src", "../img/Gameover.png");
-      imgFront.setAttribute("src", "../img/Card1.png");
+      imgValue.setAttribute("src", "img/Gameover.png");
+      imgFront.setAttribute("src", "img/Card1.png")
       cardTable.appendChild(getCard);
       getCard.appendChild(flipCardInner);
       flipCardInner.appendChild(flipCardFront);
@@ -86,7 +86,7 @@ function startGame() {
     function getBugCard(levelButton) {
       let randomBug = getRandom(1, levelButton);
       if (randomBug == 1) {
-        createdCards.imgValueName.setAttribute("src", "../img/BugCard.png");
+        createdCards.imgValueName.setAttribute("src", "img/BugCard.png");
       }
     }
 
