@@ -1,21 +1,48 @@
-# Игра "Найди Баг"
+# Game "Find the Bug"
 
-## Проверь свою интуицию! ;)
+## Try your luck! ;)
 
-### Правила игры:
+By Zinfira Timofeev
 
-1. Первый экран спрашивает у пользователя уровень сложности. От уровня сложности зависит количество карт, из которых нужно будет угадать, где баг.
-Простой – 3 карты.
-Средний – 6 карт.
-Сложный – 9 карт.
-2. После выбора сложности пользователь нажимает на кнопку "Начать игру".
-3.Появляется поле с картами. Все значения карт скрыты. Все карты кроме одной пустые. Одна из карт – это баг.
-4. Пользователь может выбрать одну любую карту.
-5. После клика по карте, карта переворачивается с анимацией.
-6. Карта может быть двух значений.
-- Пустой.
-- С багом.
-7. Далее пользователь может кликнуть по карте и вернуться к началу игры – шаг 1.
+## Description
 
+This is a simple card game. It's created by me using vanilla JavaScript.
 
-## Кликни на [ссылку](https://webheroschool.github.io/bug_zinfira/) и играй.
+### Game instructions:
+
+1. The first screen asks a user for the level of difficulty. The number of cards depends on the difficulty level.
+Easy level - 3 cardsl.
+Medium level - 6 cards.
+Hard level -  10 cards.
+2. After selecting the difficulty level, the user clicks on the "Start Game" button.
+3. Then the Game Table appears. All card meanings are hidden. All cards except one are blank. One of the cards is a bug.
+4. The user can choose any card.
+5. After clicking on the card, the card flips over with a little bit of animation.
+6. The card can have two meanings:
+- A blank card;
+- A bug card;
+7. Then the user can click on the card and restart the game - step 1.
+
+## Setup/Installation Requirements
+
+Click here [https://zinfira.github.io/bug_game/](https://zinfira.github.io/bug_game/) and play.
+
+ Clone repository from GitHub: https://github.com/Zinfira/bug_game.git
+
+## Known bugs
+
+Not known bugs at this time.
+
+## Support and contact details
+
+_If you have any issues with the program or you have any suggestions, email me <zsafargalieva@gmail.com>_
+
+## Technologies Used
+
+_HTML, CSS, JavaScript_
+
+### License
+
+*Licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) license*
+
+Copyright (c) 2020 **_Zinfira Timofeev (Safargalieva)_**
