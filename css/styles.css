@@ -3,12 +3,13 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: url(../img/Back.png);
   box-sizing: border-box;
 }
 
 .game-background {
   font-family: 'Roboto', sans-serif;
-  background-image: url(../img/Background.png);
+  /* background-image: url(../img/Background.png); */
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -17,7 +18,7 @@ body {
 }
 
 .menu {
-  padding-top: 129px;
+  padding-top: 40px;
   padding-left: 103px;
 }
 
@@ -26,8 +27,8 @@ body {
   background-image: url("../img/Card1.png");
   background-size: 218px 341px;
   position: absolute;
-  top: 518px;
-  right: 158px;
+  top: 318px;
+  right: 200px;
   width: 218px;
   height: 341px;
   left: 1101.78px;
@@ -44,7 +45,7 @@ body {
   position: absolute;
   width: 218px;
   height: 341px;
-  top: 512px;
+  top: 312px;
   left: 927px;
   transform: rotate(12deg);
   border-radius: 9px;
@@ -102,7 +103,6 @@ p {
   transform: rotate(45deg);
 }
 
-
 .btn-start {
   font-size: 32px;
   font-weight: 700;
@@ -116,7 +116,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   outline-style: none;
   border-width: 0;
-  margin-bottom: 305px;
+  margin-bottom: 60px;
 }
 
 .btn-start:hover {
@@ -129,7 +129,7 @@ p {
   perspective: 1000px; 
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .card-table {
@@ -141,7 +141,22 @@ p {
   justify-content: center;
   width: max-content;
   max-width: 1440px;
-  height: 1024px;
+  /* height: 100vh; */
+  /* height: 1024px; */
+}
+
+.cardsForEasy {
+  padding-top: 80px;
+}
+
+.cardsForMedium {
+  /* padding-top: 30px; */
+  max-width: 730px;
+}
+
+.cardsForHard {
+  /* padding-top: 100px; */
+  max-width: 1210px;
 }
 
 .card {
@@ -187,4 +202,146 @@ p {
 img {
   width: 218px;
   height: 341px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .menu::before,
+  .menu::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  
+  .cardsForHard {
+    padding-top: 50px;
+    max-width: 1300px;
+  }
+
+  .cardsForMedium {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .cardsForHard {
+    padding-top: 50px;
+    max-width: 800px;
+  }
+
+  .cardsForMedium {
+    padding-top: 70px;
+    max-width: 600px;
+  }
+
+  .card {
+    width: 130px;
+    height: 200px;
+  }
+
+  img {
+    width: 130px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .cardsForHard {
+    padding-top: 150px;
+    max-width: 600px;
+  }
+
+  .cardsForMedium {
+    padding-top: 200px;
+    max-width: 350px;
+  }
+
+  .card {
+    width: 100px;
+    height: 150px;
+  }
+
+  img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .menu {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  
+  .menu {
+    padding: 40px 0 0 30px;
+    font-size: 0.5rem;
+  }
+
+  .game-title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    padding-right: 19px;
+  }
+
+  .menu {
+    margin-bottom: 40px;
+  }
+
+  .difficulty {
+    margin-bottom: 70px;
+  }
+
+  .difficulty__level {
+    font-size: 35px;
+    line-height: 30px;
+  }
+
+  .btn-start {
+    font-size: 32px;
+    line-height: 37px;
+    width: 255px;
+    height: 70px;
+  }
+
+  .checked::before {
+    top: 10px;
+  }
+
+  .card-table {
+    margin-left: 0;
+  }
+
+  .card {
+    width: 70px;
+    height: 108px;
+  }
+
+  .cardsForHard {
+    padding-top: 100px;
+    max-width: 350px;
+  }
+
+  .cardsForMedium {
+    padding-top: 70px;
+    max-width: 300px;
+    padding-right: 100px;
+  }
+
+  .cardsForEasy {
+    padding-top: 100px;
+    max-width: 300px;
+    padding-right: 150px;
+  }
+
+  img {
+    width: 73px;
+    height: 100px;
+  }
 }

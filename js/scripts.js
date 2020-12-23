@@ -47,6 +47,7 @@ function startGame() {
 
   let newCreatedGame = createdTableLevel(currentLevel);
   menuScreen.remove();
+  cardTable.classList.remove("cardsForEasy", "cardsForMedium", "cardsForHard");
   gameBoard.appendChild(cardRoom);
   cardRoom.appendChild(cardTable);
 
@@ -104,19 +105,19 @@ function startGame() {
   function createTable(levelButton) {
     switch (levelButton) {
       case "easy":
-        cardTable.classList.add("game-cards");
+        cardTable.classList.add("cardsForEasy");
         for (let i = 3; i--; ) {
           card(currentLevel);
         }
         break;
       case "medium":
-        cardTable.classList.add("game-cards");
+        cardTable.classList.add("cardsForMedium");
         for (let i = 6; i--; ) {
           card(currentLevel);
         }
         break;
       case "hard":
-        cardTable.classList.add("game-cards");
+        cardTable.classList.add("cardsForHard");
         for (let i = 10; i--; ) {
           card(currentLevel);
         }
